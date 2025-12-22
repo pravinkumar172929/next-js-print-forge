@@ -1,6 +1,5 @@
 import heroImage from "@/public/home-page-hero-image.png";
 export default function Home() {
-  console.log("heroImage => ", heroImage);
   return (
     <main>
       <section className="flex flex-col-reverse items-center justify-between gap-8 px-6 py-12 mx-auto md:flex-row max-w-7xl">
