@@ -23,6 +23,9 @@ export default function RootLayout({
       <body
         className={`${albertSans.className} ${montserratAlternates.variable}`}
       >
+        <div className="p-10 text-4xl font-bold text-purple-600 bg-yellow-200">
+          Tailwind is finally working 🎉
+        </div>
         <header className="w-full bg-white">
           <nav className="flex justify-between px-6 py-4">
             <div className="relative">
