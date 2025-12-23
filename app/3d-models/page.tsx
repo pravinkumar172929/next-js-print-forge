@@ -1,3 +1,4 @@
+import ModelCard from "../components/ModelCard";
 import { getAllModels } from "../lib/models";
 import type { Model } from "../types";
 export default async function ModelsList() {
@@ -12,7 +13,7 @@ export default async function ModelsList() {
         aria-label="3D Models Gallery"
       >
         {models.map((model: Model) => (
-          <h1 key={model.id}>{model.name}</h1>
+          <ModelCard key={model.id} model={model} />
         ))}
       </div>
     </div>
