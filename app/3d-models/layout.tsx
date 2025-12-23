@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { getAllCategories } from "../lib/categories";
 import type { Category, ModelsLayoutProps } from "../types";
 
@@ -8,7 +9,12 @@ export default function ModelsLayout({ children }: ModelsLayoutProps) {
     <div>
       <nav>
         {categories.map((category: Category) => (
-          <p>{category.displayName}</p>
+          <Link
+            key={category.slug}
+            href={`/3d-models/categories/${category.slug}`}
+          >
+            {category.displayName}
+          </Link>
         ))}
       </nav>
       {children}
