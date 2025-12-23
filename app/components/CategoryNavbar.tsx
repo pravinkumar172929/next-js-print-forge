@@ -8,8 +8,7 @@ import type { Category } from "../types";
 export default function CategoryNavbar() {
   const pathname = usePathname();
   const categories = getAllCategories();
-  // console.log("categories", categories);
-  console.log("pathname => ", pathname);
+
   return (
     <aside className="sticky top-0 z-10 w-full bg-white border-b border-gray-200 md:fixed md:w-64 md:top-1/2 md:-translate-y-1/2 md:border-none">
       <div className="relative">
