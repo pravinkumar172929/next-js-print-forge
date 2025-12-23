@@ -6,7 +6,9 @@ export async function getAllModels(): Promise<Model[]> {
 }
 
 export async function getModelById(id: string | number): Promise<Model> {
-  const foundModel = modelsData.find((model) => model.id === id);
+  const foundModel = modelsData.find(
+    (model) => model.id.toString() === id.toString()
+  );
   if (!foundModel) {
     throw new Error("model not found");
   }
