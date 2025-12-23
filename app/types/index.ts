@@ -42,3 +42,7 @@ export type NavLinkProps = {
   children: React.ReactNode;
   isActive?: boolean;
 };
+
+export type ModelGridProps = {
+  models: Model[];
+};
