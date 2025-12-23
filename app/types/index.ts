@@ -27,3 +27,8 @@ export type ModelDetailsProps = {
 export type CategoryPagePros = {
   params: Promise<{ categoryName: string }>;
 };
+
+export type Category = {
+  displayName: string;
+  slug: string;
+};
