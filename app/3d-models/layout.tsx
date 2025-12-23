@@ -8,6 +8,7 @@ export default function ModelsLayout({ children }: ModelsLayoutProps) {
   return (
     <div>
       <nav>
+        <Link href="/3d-models">All</Link>
         {categories.map((category: Category) => (
           <Link
             key={category.slug}
