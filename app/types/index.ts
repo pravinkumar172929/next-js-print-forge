@@ -36,3 +36,8 @@ export type Category = {
 export type ModelsLayoutProps = {
   children: React.ReactNode;
 };
+
+export type NavLinkProps = {
+  href: string;
+  children: React.ReactNode;
+};
