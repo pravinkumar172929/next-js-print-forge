@@ -40,4 +40,5 @@ export type ModelsLayoutProps = {
 export type NavLinkProps = {
   href: string;
   children: React.ReactNode;
+  isActive?: boolean;
 };
