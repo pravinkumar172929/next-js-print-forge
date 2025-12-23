@@ -1,3 +1,4 @@
+import ModelsGrid from "@/app/components/ModelsGrid";
 import { getModelsByCategory } from "@/app/lib/models";
 import type { CategoryPagePros } from "@/app/types";
 
@@ -8,8 +9,7 @@ export default async function CategoryPage({ params }: CategoryPagePros) {
 
   return (
     <>
-      <h1>CategoryPage</h1>
-      <p>{categoryName}</p>
+      <ModelsGrid models={models} />
     </>
   );
 }
