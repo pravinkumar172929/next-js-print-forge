@@ -23,3 +23,7 @@ export type PillProps = {
 export type ModelDetailsProps = {
   params: Promise<{ id: string }>;
 };
+
+export type CategoryPagePros = {
+  params: Promise<{ categoryName: string }>;
+};
