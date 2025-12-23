@@ -47,3 +47,9 @@ export type ModelGridProps = {
   models: Model[];
   title: string;
 };
+
+export type ModelsListProps = {
+  searchParams: {
+    query?: string;
+  };
+};
