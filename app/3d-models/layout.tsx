@@ -1,10 +1,7 @@
-import { getAllCategories } from "../lib/categories";
 import type { ModelsLayoutProps } from "../types";
 import CategoryNavbar from "../components/CategoryNavbar";
 
 export default function ModelsLayout({ children }: ModelsLayoutProps) {
-  const categories = getAllCategories();
-  console.log("categories", categories);
   return (
     <div className="relative flex flex-col min-h-screen md:flex-row">
       <CategoryNavbar />

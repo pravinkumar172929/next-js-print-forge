@@ -7,13 +7,11 @@ import Pill from "@/app/components/Pill";
 export default async function Modeldetails({ params }: ModelDetailsProps) {
   const { id } = await params;
 
-  //   console.log(typeof id);
   const foundModel = await getModelById(id);
 
   return (
     <div className="container max-w-6xl px-4 py-8 mx-auto">
       <article className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-        {/* Image Section */}
         <figure className="relative overflow-hidden rounded-lg shadow-lg aspect-square">
           <img
             src={placeholderImg.src}
@@ -22,7 +20,6 @@ export default async function Modeldetails({ params }: ModelDetailsProps) {
           />
         </figure>
 
-        {/* Content Section */}
         <section className="flex flex-col justify-center h-full">
           <div
             className="flex items-center mb-2 text-2xl text-gray-600"

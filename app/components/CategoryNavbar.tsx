@@ -28,7 +28,6 @@ export default function CategoryNavbar() {
             ))}
           </ul>
         </nav>
-        {/* Fading edge/gradient for horizontal scroll hint on mobile */}
         <div className="absolute top-0 right-0 w-8 h-full pointer-events-none bg-gradient-to-l from-white to-transparent md:hidden" />
       </div>
     </aside>

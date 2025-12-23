@@ -5,9 +5,9 @@ import Form from "next/form";
 
 export default async function ModelsList({ searchParams }: ModelsListProps) {
   const models = await getAllModels();
-  console.log("searchParams", searchParams);
+
   const query = searchParams.query ?? "";
-  console.log("query ====>", query);
+
   const filteredModels = models.filter((model: Model) =>
     model.name.toLowerCase().includes(query.toLowerCase())
   );

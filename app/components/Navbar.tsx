@@ -13,13 +13,11 @@ export default function Navbar() {
       <nav className="flex justify-between px-6 py-4">
         <Link href="/">
           <div className="relative">
-            {/* Desktop logo */}
             <img
               src={PFLogo.src}
               alt="PrintForge Logo"
               className="w-[200px] h-auto hidden md:block"
             />
-            {/* Mobile logo */}
             <img
               src={PFLogoIcon.src}
               alt="PrintForge Logo"
