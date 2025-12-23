@@ -5,4 +5,11 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+  theme: {
+    extend: {
+      colors: {
+        "orange-accent": "#F77D36",
+      },
+    },
+  },
 };
