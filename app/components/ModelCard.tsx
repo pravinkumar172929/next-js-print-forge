@@ -1,4 +1,6 @@
 import type { ModelCardProps } from "../types";
+import { FaRegHeart } from "react-icons/fa6";
+import placeholderImg from "@/public/hero-image-square.png";
 
 export default function ModelCard({ model }: ModelCardProps) {
   return (
@@ -12,11 +14,11 @@ export default function ModelCard({ model }: ModelCardProps) {
         role="article"
       >
         <div className="relative aspect-square">
-          {/* <img
+          <img
             src={placeholderImg.src}
             alt={model.name}
             className="absolute inset-0 object-cover w-full h-full"
-          /> */}
+          />
         </div>
         <div className="p-4">
           <div className="flex justify-between mb-2 min-h-[3.5rem]">
@@ -35,10 +37,10 @@ export default function ModelCard({ model }: ModelCardProps) {
             className="flex items-center mt-2 text-gray-600"
             aria-label={`${model.likes} likes`}
           >
-            {/* <FaRegHeart
+            <FaRegHeart
               className="w-5 h-5 mr-1 text-gray-400"
               aria-hidden="true"
-            /> */}
+            />
             <span>{model.likes}</span>
           </div>
         </div>
