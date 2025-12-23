@@ -19,3 +19,7 @@ export type ModelCardProps = {
 export type PillProps = {
   children: React.ReactNode;
 };
+
+export type ModelDetailsProps = {
+  params: Promise<{ id: string }>;
+};
