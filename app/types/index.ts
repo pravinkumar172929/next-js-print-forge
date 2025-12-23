@@ -32,3 +32,7 @@ export type Category = {
   displayName: string;
   slug: string;
 };
+
+export type ModelsLayoutProps = {
+  children: React.ReactNode;
+};
