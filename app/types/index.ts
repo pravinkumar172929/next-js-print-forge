@@ -15,3 +15,7 @@ export type Model = {
 export type ModelCardProps = {
   model: Model;
 };
+
+export type PillProps = {
+  children: React.ReactNode;
+};

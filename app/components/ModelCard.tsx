@@ -1,6 +1,7 @@
 import type { ModelCardProps } from "../types";
 import { FaRegHeart } from "react-icons/fa6";
 import placeholderImg from "@/public/hero-image-square.png";
+import Pill from "./Pill";
 
 export default function ModelCard({ model }: ModelCardProps) {
   return (
@@ -32,7 +33,9 @@ export default function ModelCard({ model }: ModelCardProps) {
           <p className="text-gray-800 text-sm line-clamp-2 min-h-[2.5rem] leading-[1.25rem]">
             {model.description}
           </p>
-          <div className="mt-2">{/* <Pill>{model.category}</Pill> */}</div>
+          <div className="mt-2">
+            <Pill>{model.category}</Pill>
+          </div>
           <div
             className="flex items-center mt-2 text-gray-600"
             aria-label={`${model.likes} likes`}
