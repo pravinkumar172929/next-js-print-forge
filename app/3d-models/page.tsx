@@ -4,5 +4,5 @@ import { getAllModels } from "../lib/models";
 export default async function ModelsList() {
   const models = await getAllModels();
 
-  return <ModelsGrid models={models} />;
+  return <ModelsGrid models={models} title="All Models" />;
 }

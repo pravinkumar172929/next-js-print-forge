@@ -45,4 +45,5 @@ export type NavLinkProps = {
 
 export type ModelGridProps = {
   models: Model[];
+  title: string;
 };
