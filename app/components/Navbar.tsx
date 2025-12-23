@@ -1,6 +1,7 @@
 import PFLogo from "@/public/printforge-logo.svg";
 import PFLogoIcon from "@/public/printforge-logo-icon.svg";
 import Link from "next/link";
+import NavLink from "./NavLink";
 
 export default function Navbar() {
   return (
@@ -23,12 +24,8 @@ export default function Navbar() {
           </div>
         </Link>
         <ul className="flex items-center gap-2.5">
-          <li className="text-sm uppercase cursor-pointer">
-            <Link href="/3d-models">3D Models</Link>
-          </li>
-          <li className="text-sm uppercase cursor-pointer">
-            <Link href="/about">About</Link>
-          </li>
+          <NavLink href="/3d-models">3D Models</NavLink>
+          <NavLink href="/about">About</NavLink>
         </ul>
       </nav>
     </header>

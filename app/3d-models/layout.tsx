@@ -1,6 +1,6 @@
-import Link from "next/link";
 import { getAllCategories } from "../lib/categories";
 import type { Category, ModelsLayoutProps } from "../types";
+import NavLink from "../components/NavLink";
 
 export default function ModelsLayout({ children }: ModelsLayoutProps) {
   const categories = getAllCategories();
@@ -12,14 +12,14 @@ export default function ModelsLayout({ children }: ModelsLayoutProps) {
         <div className="relative">
           <nav className="w-full overflow-x-auto md:overflow-visible scrollbar-hide">
             <ul className="flex px-4 py-3 space-x-4 whitespace-nowrap md:flex-col md:p-0 md:space-x-0 md:space-y-3">
-              <Link href="/3d-models">All</Link>
+              <NavLink href="/3d-models">All</NavLink>
               {categories.map((category: Category) => (
-                <Link
+                <NavLink
                   href={`/3d-models/categories/${category.slug}`}
                   key={category.slug}
                 >
                   {category.displayName}
-                </Link>
+                </NavLink>
               ))}
             </ul>
           </nav>
