@@ -14,3 +14,16 @@ export async function getModelById(id: string | number): Promise<Model> {
   }
   return foundModel;
 }
+
+export async function getModelsByCategory(category: string): Promise<Model[]> {
+  const allModelsCopy = [...modelsData];
+
+  if (category) {
+    const filteredModels = allModelsCopy.filter(
+      (model) => model.category === category
+    );
+    return filteredModels;
+  } else {
+    return modelsData;
+  }
+}
