@@ -1,3 +1,5 @@
+"use client";
+
 import PFLogo from "@/public/printforge-logo.svg";
 import PFLogoIcon from "@/public/printforge-logo-icon.svg";
 import Link from "next/link";
