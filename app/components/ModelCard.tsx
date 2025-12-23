@@ -2,11 +2,12 @@ import type { ModelCardProps } from "../types";
 import { FaRegHeart } from "react-icons/fa6";
 import placeholderImg from "@/public/hero-image-square.png";
 import Pill from "./Pill";
+import Link from "next/link";
 
 export default function ModelCard({ model }: ModelCardProps) {
   return (
-    <div
-      //   href={`/3d-models/${model.id}`}
+    <Link
+      href={`/3d-models/${model.id}`}
       className="block group hover:shadow-[0_5px_12px_rgba(0,0,0,0.1)] hover:-translate-y-[3px] transition-all"
       aria-labelledby={`model-${model.id}-title`}
     >
@@ -48,6 +49,6 @@ export default function ModelCard({ model }: ModelCardProps) {
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
