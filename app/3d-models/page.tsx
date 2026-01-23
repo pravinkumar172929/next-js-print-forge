@@ -20,6 +20,7 @@ export default async function ModelsList({ searchParams }: ModelsListProps) {
           type="text"
           name="query"
           className="w-full py-3 pl-5 pr-5 text-sm placeholder-gray-500 bg-white border border-[#606060] rounded-full focus:border-[#606060] focus:outline-none focus:ring-0 md:text-base"
+          placeholder="Search for a model"
         />
       </Form>
       <ModelsGrid models={filteredModels} title="All Models" />
