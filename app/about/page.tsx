@@ -1,4 +1,6 @@
 import heroImageSquare from "@/public/hero-image-square.png";
+import printForgeLogo from "@/public/printforge-logo-icon.svg";
+
 export default function AboutPage() {
   return (
     <main>
@@ -90,6 +92,15 @@ export default function AboutPage() {
             wanting to share your creations, PrintForge provides the tools and
             community to support your journey in 3D printing.
           </p>
+        </div>
+      </section>
+      <section className="py-16">
+        <div className="flex justify-center opacity-40">
+          <img
+            src={printForgeLogo.src}
+            alt="PrintForge Community - A group of makers collaborating on 3D printing projects"
+            width="350"
+          />
         </div>
       </section>
     </main>
