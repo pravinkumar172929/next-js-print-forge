@@ -36,7 +36,9 @@ export default async function Modeldetails({ params }: ModelDetailsProps) {
           </div>
           <h1 className="mb-6 text-4xl font-bold">{foundModel.name}</h1>
 
-          <Pill aria-label="Category">{foundModel.category}</Pill>
+          <Pill className="self-start" aria-label="Category">
+            {foundModel.category}
+          </Pill>
 
           <div className="mb-6 prose prose-lg max-w-none">
             <p className="leading-relaxed text-gray-700">
