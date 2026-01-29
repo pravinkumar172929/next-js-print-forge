@@ -4,9 +4,9 @@ import type { Model, ModelsListProps } from "../types";
 import Form from "next/form";
 
 export default async function ModelsList({ searchParams }: ModelsListProps) {
+  const resolvedSearchParams = await searchParams;
+  const query = resolvedSearchParams.query ?? "";
   const models = await getAllModels();
-
-  const query = searchParams.query ?? "";
 
   const filteredModels = models.filter((model: Model) =>
     model.name.toLowerCase().includes(query.toLowerCase())
