@@ -42,6 +42,7 @@ export type NavLinkProps = {
   href: string;
   children: React.ReactNode;
   isActive?: boolean;
+  variant?: "default" | "sidebar";
 };
 
 export type ModelGridProps = {
