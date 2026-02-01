@@ -19,7 +19,7 @@ export default function ModelsLayout({ children }: ModelsLayoutProps) {
       >
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="mb-4 w-8 h-8 flex items-center justify-center border rounded-full bg-white shadow hover:bg-gray-100"
+          className="hidden md:flex mb-4 w-8 h-8 items-center justify-center border rounded-full bg-white shadow hover:bg-gray-100"
           aria-label="Toggle menu"
         >
           {isMenuOpen ? (
