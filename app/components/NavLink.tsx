@@ -7,24 +7,38 @@ export default function NavLink({
   isActive,
   variant = "default",
 }: NavLinkProps) {
-  const baseStyles =
-    "px-4 py-2 transition-colors rounded-md cursor-pointer hover:text-orange-accent";
-
-  const activeStyles =
-    variant === "sidebar"
-      ? "text-orange-accent border-l-2 border-orange-accent"
-      : "text-orange-accent underline";
-
-  const inactiveStyles =
-    variant === "sidebar"
-      ? "text-gray-700 border-l-2 border-transparent"
-      : "text-gray-700";
+  const isSidebar = variant === "sidebar";
 
   return (
-    <li className="text-sm uppercase">
+    <li
+      className={`
+        text-sm uppercase
+        ${isSidebar ? "relative" : ""}
+        ${
+          isSidebar && isActive
+            ? "border-l-2 border-orange-accent"
+            : isSidebar
+            ? "border-l-2 border-transparent"
+            : ""
+        }
+      `}
+    >
       <Link
-        className={`${baseStyles} ${isActive ? activeStyles : inactiveStyles}`}
         href={href}
+        className={`
+          block
+          px-4 py-2
+          transition-colors
+          cursor-pointer
+          hover:text-orange-accent
+          ${
+            isActive
+              ? isSidebar
+                ? "text-orange-accent"
+                : "text-orange-accent underline"
+              : "text-gray-700"
+          }
+        `}
       >
         {children}
       </Link>
