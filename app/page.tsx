@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main>
-      <section className="mx-auto flex max-w-7xl flex-col-reverse items-center gap-8 px-6 py-12 md:flex-row">
+      <section className="mx-auto flex max-w-7xl flex-col items-center gap-8 px-6 py-12 md:flex-row">
         <div className="flex w-full flex-col space-y-6 md:w-1/2">
           <p className="hidden text-sm uppercase text-gray-600 md:block">
             Your go-to platform for 3D printing files
