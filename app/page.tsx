@@ -27,7 +27,6 @@ export default function Home() {
           </Link>
         </div>
 
-        {/* Image */}
         <div className="w-full md:w-1/2">
           <img
             src={heroImage.src}
