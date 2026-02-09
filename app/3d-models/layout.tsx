@@ -10,7 +10,10 @@ export default function ModelsLayout({ children }: ModelsLayoutProps) {
 
   return (
     <div className="relative flex min-h-screen">
-      {isMenuOpen && <CategoryNavbar />}
+      {/* Mobile: always show | Desktop: toggle */}
+      <div className={isMenuOpen ? "block" : "hidden md:block"}>
+        <CategoryNavbar />
+      </div>
 
       <main
         className={`flex-1 p-4 transition-all ${
@@ -19,8 +22,7 @@ export default function ModelsLayout({ children }: ModelsLayoutProps) {
       >
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="mb-4 w-8 h-8 flex items-center justify-center border rounded-full bg-white shadow hover:bg-gray-100"
-          aria-label="Toggle menu"
+          className="hidden md:flex mb-4 w-8 h-8 items-center justify-center border rounded-full bg-white shadow hover:bg-gray-100"
         >
           {isMenuOpen ? (
             <FaChevronLeft className="w-4 h-4" />

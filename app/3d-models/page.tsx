@@ -14,8 +14,8 @@ export default async function ModelsList({ searchParams }: ModelsListProps) {
 
   return (
     <>
-      <div className="flex items-center justify-end px-5 md:px-0 mb-8">
-        <Form action="/3d-models" className="w-full px-5 md:px-0 md:max-w-xl">
+      <div className="flex items-center justify-center md:justify-end mb-8">
+        <Form action="/3d-models" className="w-full px-5 md:px-0 md:w-[420px]">
           <input
             defaultValue={query}
             type="text"
